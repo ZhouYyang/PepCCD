@@ -4,7 +4,7 @@
 
 ## Overview of MMCD 
 
-![model](model.pdf)
+![model](https://github.com/ZhouYyang/PepCCD/blob/main/model.pdf)
 
 ## Getting Started
 
@@ -14,8 +14,19 @@ conda activate PepCCD
 1. ESM-2 Protein Language Model
 Visit https://huggingface.co/facebook/esm2_t30_150M_UR50D and download the entire repository folder to: path/to/PepCCD/checkpoints/ESM/
 
-2.Stage1 Checkpoints
-Download from https://huggingface.co/ZhouYyang/PepCCD/tree/main
+2. PepCCD Checkpoints
+Vist https://huggingface.co/ZhouYyang/PepCCD/tree/main
+
+mkdir -p /path/to/PepCCD/checkpoints/Align
+Download best_pep.pthand best_prot.pth to /path/to/PepCCD/checkpoints/Align
+
+mkdir -p /path/to/PepCCD/checkpoints/Fine_Diffusion
+Download diffusion_model.pt to /path/to/PepCCD/checkpoints/Fine_Diffusion
+
+3. Pre-training Dataset
+Vist https://huggingface.co/ZhouYyang/PepCCD/tree/main
+mkdir -p /path/to/PepCCD/dataset/Pre_Diffusion
+Download pre_trained_sequence.json to /path/to/PepCCD/dataset/Pre_Diffusion
 
 ### Trian
 Before running the code, configure your Python path by adding the following lines at the beginning of your script:
